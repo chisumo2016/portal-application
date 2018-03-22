@@ -1,5 +1,6 @@
 <?php
 
+
 Route::bind('email_address', function ($emailAddress) {
     return App\User::findByEmailAddress($emailAddress);
 });
